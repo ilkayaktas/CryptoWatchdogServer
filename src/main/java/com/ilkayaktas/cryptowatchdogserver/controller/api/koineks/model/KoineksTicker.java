@@ -3,7 +3,6 @@ package com.ilkayaktas.cryptowatchdogserver.controller.api.koineks.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import com.ilkayaktas.cryptowatchdogserver.controller.api.bithumb.model.BTC;
 
 public class KoineksTicker {
 

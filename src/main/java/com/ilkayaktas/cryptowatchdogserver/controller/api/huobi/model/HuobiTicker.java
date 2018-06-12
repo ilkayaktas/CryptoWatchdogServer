@@ -17,6 +17,6 @@ public class HuobiTicker {
     public Long ts;
     @SerializedName("tick")
     @Expose
-    public com.thedeveloperia.btcmarket.controller.api.huobi.model.Tick tick;
+    public Tick tick;
 
 }

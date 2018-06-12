@@ -31,6 +31,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import retrofit2.Retrofit;
@@ -50,6 +51,7 @@ public class DataManagerInjector {
     }
 
     @Bean
+    @Qualifier(value = "DB")
     public IDbHelper provideDbHelper(){
         return new DbHelper();
     }
